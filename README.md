@@ -16,38 +16,43 @@ It uses a pre-trained deep learning model (DeepFace) to classify emotions from v
 
 ## 📍 Installation
 
-### Step 1. Set Python version
-
-If using `pyenv`, set your local version (adjust if needed):
-
+### Step 1. Install and Configure Python 3.10 Environment
+Installs Python version 3.10 using Homebrew for use in isolated development environments.
 ```bash
-pyenv local 3.10.13 # Replace 3.10.13 with the Python version shown by `pyenv versions`
+brew install python@3.10
 ```
-> Check available versions with:
+Creates a virtual environment named `.venv` using Python 3.10 in the current directory.
 ```
-pyenv versions
+python3.10 -m venv .venv
+source .venv/bin/activate
 ```
-### Step 2. Install Required Python Packages
+Upgrades pip to the latest version to ensure smooth and secure package installations.
+```
+pip install --upgrade pip
+```
 
-2-1) Install OpenCV for handling video input and frame processing
-```bash
+### Step 2. Install Core Libraries and Dependencies
+Installs the OpenCV library for image and video processing tasks.
+```
 pip install opencv-python
 ```
-
-2-2) Install DeepFace for emotion detection with pre-trained deep learning models
-```bash
-pip install deepface
+Installs TensorFlow version 2.19.0 for machine learning and deep learning development.
 ```
-
-2-3) Install tf-keras, required for RetinaFace model compatibility
-```bash
+pip install tensorflow==2.19.0
+```
+Installs DeepFace, a library for face recognition and emotion analysis.
+```
+pip install deepface==0.0.93
+```
+Installs the standalone tf-keras package to use Keras with TensorFlow backend.
+```
 pip install tf-keras
 ```
-> tkinter is built into Python on most systems.
-> If you're on Linux and it doesn't work, try:
+Installs the `tkinter` GUI toolkit for Python 3.10 to enable graphical user interfaces.
 ```
-sudo apt-get install python3-tk
+brew install python-tk@3.10
 ```
+
 ### Step 3. How to Run
 From the project directory, run:
 ```
@@ -85,6 +90,7 @@ You can view the full project report here:  [Final Project Report (Google Docs)]
 ---
 
 ## 📍 Author
-- Umulbanin Gulzar
+- Yujin Kim (Lead Developer)  
+- Umulbanin Gulzar (Documentation & Testing)
 
-- Yujin Kim
+
