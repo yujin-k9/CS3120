@@ -42,7 +42,7 @@ while cap.isOpened():
     cv2.imshow("Student Engagement Analyzer", frame)
 
     # Press 'q' to exit
-    if cv2.waitKey(25) & 0xFF == ord('q'):
+    if cv2.waitKey(9) & 0xFF == ord('q'):
         break
 
 # Clean up
