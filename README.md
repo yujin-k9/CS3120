@@ -17,38 +17,38 @@ It uses a pre-trained deep learning model (DeepFace) to classify emotions from v
 ## 📍 Installation
 
 ### Step 1. Install and Configure Python 3.10 Environment
-1-1) Installs Python version 3.10 using Homebrew for use in isolated development environments.
+**1-1)** Installs Python version 3.10 using Homebrew for use in isolated development environments.
 ```bash
 brew install python@3.10
 ```
-1-2) Creates a virtual environment named `.venv` using Python 3.10 in the current directory.
+**1-2)** Creates a virtual environment named `.venv` using Python 3.10 in the current directory.
 ```
 python3.10 -m venv .venv
 source .venv/bin/activate
 ```
-1-3) Upgrades pip to the latest version to ensure smooth and secure package installations.
+**1-3)** Upgrades pip to the latest version to ensure smooth and secure package installations.
 ```
 pip install --upgrade pip
 ```
 
 ### Step 2. Install Core Libraries and Dependencies
-2-1) Installs the OpenCV library for image and video processing tasks.
+**2-1)** Installs the `OpenCV` library for image and video processing tasks.
 ```
 pip install opencv-python
 ```
-2-2) Installs TensorFlow version 2.19.0 for machine learning and deep learning development.
+**2-2)** Installs `TensorFlow version 2.19.0` for machine learning and deep learning development.
 ```
 pip install tensorflow==2.19.0
 ```
-2-3) Installs DeepFace, a library for face recognition and emotion analysis.
+**2-3)** Installs `DeepFace`, a library for face recognition and emotion analysis.
 ```
 pip install deepface==0.0.93
 ```
-2-4) Installs the standalone tf-keras package to use Keras with TensorFlow backend.
+**2-4)** Installs the standalone `tf-keras package` to use Keras with TensorFlow backend.
 ```
 pip install tf-keras
 ```
-2-5) Installs the `tkinter` GUI toolkit for Python 3.10 to enable graphical user interfaces.
+**2-5)** Installs the `tkinter` GUI toolkit for Python 3.10 to enable graphical user interfaces.
 ```
 brew install python-tk@3.10
 ```
@@ -63,6 +63,11 @@ python student_engagement.py
 2. The analyzer will open a window with real-time emotion and engagement results
 
 3. Press `q` to exit the video window
+
+---
+## 📍 See a quick demo
+
+📽️ [Click here to download the video demo](https://github.com/yujin-k9/CS3120/raw/main/assets/demo.mov)
 
 ---
 
