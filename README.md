@@ -96,6 +96,6 @@ You can view the full project report here:  [Final Project Report (Google Docs)]
 
 ## 📍 Author
 - Yujin Kim (Lead Developer)  
-- Umulbanin Gulzar (Documentation & Testing)
+- Umulbanin Gulzar (Developer, Documentation and Testing)
 
 
